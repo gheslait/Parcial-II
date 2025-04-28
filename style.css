@@ -256,6 +256,15 @@ textarea:focus {
 .btn:hover {
     background: #0056b3;
 }
+.custom-popup {
+    border-radius: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-title {
+    color: #5cb85c;
+}
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;

@@ -26,6 +26,12 @@
               emailjs.init('F_0BqD0QGA_csbakf');
           })();
         </script>
+        
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.5/dist/sweetalert2.min.js"></script>
+
 </head>
 <body>
 
@@ -105,13 +111,25 @@
     
         emailjs.sendForm('service_671mjyx', 'template_f0a1yfz', this)
             .then(function() {
-                console.log('Correo enviado exitosamente!');
-                alert('¡Correo enviado exitosamente!');
+                //console.log('Correo enviado exitosamente!');
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Correo enviado exitosamente!',
+                    text: 'Tu mensaje fue enviado correctamente. Te responderemos pronto.',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
             }, function(error) {
-                console.log('Fallo en el envío...', error);
-                alert('Hubo un error, por favor intenta de nuevo.');
+                //console.log('Fallo en el envío...', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Hubo un error',
+                    text: 'Por favor intenta de nuevo más tarde.',
+                    confirmButtonText: 'Cerrar'
+                });
             });
     });
     </script>
+    
 </body>
 </html>
