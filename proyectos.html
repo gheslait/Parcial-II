@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos - Sitio web HTML y CSS</title>
+  <meta name="description" content="Proyectos para un sitio web simple basado únicamente en HTML y CSS" />
+  <meta name="keywords" content="Proyecto Frontend, HTML, Guillermo Hernandez" />
+  <meta name="author" content="Guillermo Hernandez" />
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="menu">
+      <div class="container">
+        <div class="name flex">
+          <svg width="60" height="50" viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="50" fill="#333"/>
+            <text x="8" y="35" font-size="30" font-family="Arial" font-weight="bold" fill="#fff">GH</text>
+          </svg>
+          <h4>G. Hernández Eslait</h4>
+          <div class="nav">
+            <label for="color-button">
+              <svg height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#D8D8DA;" d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,336.842c-44.648,0-80.842-36.194-80.842-80.842s36.194-80.842,80.842-80.842s80.842,36.194,80.842,80.842 S300.648,336.842,256,336.842z"></path> <path style="fill:#D4B6E6;" d="M282.947,188.632h220.076C485.09,122.726,441.507,67.394,383.64,34.044L229.053,188.632H282.947z"></path> <path style="fill:#EBAFD1;" d="M229.053,188.632L383.639,34.044C346.068,12.39,302.482,0,256,0c-23.319,0-45.899,3.135-67.368,8.978 v220.075L229.053,188.632z"></path> <path style="fill:#E07188;" d="M188.632,229.053V8.978C122.726,26.91,67.394,70.493,34.045,128.36l154.586,154.588V229.053z"></path> <g> <polygon style="fill:#D8D8DA;" points="188.632,229.053 229.053,188.633 282.947,188.633 282.947,188.632 229.053,188.632 "></polygon> <polygon style="fill:#D8D8DA;" points="229.053,323.367 188.632,282.947 229.053,323.368 282.947,323.368 323.368,282.947 282.947,323.367 "></polygon> </g> <path style="fill:#B4D8F1;" d="M503.024,188.632H282.947v0.001h0.958l39.463,40.42L477.955,383.64 C499.611,346.068,512,302.482,512,256C512,232.681,508.865,210.099,503.024,188.632z"></path> <path style="fill:#ACFFF4;" d="M323.368,282.947v220.075c65.905-17.932,121.238-61.517,154.586-119.382L323.368,229.053V282.947z"></path> <path style="fill:#95D5A7;" d="M282.947,323.368L128.361,477.956C165.932,499.61,209.518,512,256,512 c23.319,0,45.899-3.135,67.368-8.977V282.947L282.947,323.368z"></path> <path style="fill:#F8E99B;" d="M229.053,323.368H8.976C26.91,389.274,70.493,444.606,128.36,477.956l154.588-154.588H229.053z"></path> <path style="fill:#EFC27B;" d="M188.632,282.947L34.045,128.36C12.389,165.932,0,209.518,0,256c0,23.319,3.135,45.901,8.976,67.368 h220.076L188.632,282.947z"></path> <polygon style="fill:#D8D8DA;" points="283.905,188.633 282.947,188.633 323.368,229.053 "></polygon> <path style="fill:#B681D5;" d="M503.024,188.632C485.09,122.726,441.507,67.394,383.64,34.044L256,161.684v26.947h26.947H503.024z"></path> <path style="fill:#E592BF;" d="M383.639,34.044C346.068,12.39,302.482,0,256,0v161.684L383.639,34.044z"></path> <path style="fill:#80CB93;" d="M256,350.316V512c23.319,0,45.899-3.135,67.368-8.977V282.947l-40.421,40.421L256,350.316z"></path> <polygon style="fill:#F6E27D;" points="282.947,323.368 256,323.368 256,350.316 "></polygon> </g></svg>
+              
+            </label>
+            <input type="checkbox" id="color-button">
+            
+          </div>
+        </div>
+        <div class="nav">
+            <label for="menu_r" class="label_responsive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="burger_icono" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  
+            </label>
+            <input type="checkbox" id="menu_r" class="menu_responsive">
+          <ul class="lista">
+            <li class="li_links"><a class="link" href="index.html">Inicio</a></li>
+            <li class="li_links"><a class="link" href="#">Proyectos</a></li>
+            <li class="li_links"><a class="link" href="articulos.html">Articulos</a></li>
+            <li class="li_links"><a class="link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+        <h1>Proyectos</h1>
+        <ul>
+            <li>
+                <h2>Portafolio</h2>
+                <p>Un portafolio interactivo que destaca proyectos frontend, con animaciones y una interfaz fácil de navegar.</p>
+            </li>
+            <li style="padding-top: 20px;">
+                <h2>Calculadora</h2>
+                <p>Aplicación web de calculadora avanzada con soporte para operaciones matemáticas complejas y diseño responsivo.</p>
+            </li>
+            <li style="padding-top: 20px;">
+                <h2>Sitio web de agencia</h2>
+                <p>Página profesional para una agencia digital, con secciones dinámicas y efectos visuales usando JavaScript.</p>
+            </li>
+            <li style="padding-top: 20px;">
+                <h2>Sitio web de juegos</h2>
+                <p>Plataforma web para juegos en línea, con diseño moderno y componentes reutilizables.</p>
+            </li>
+            <li style="padding-top: 20px;">
+                <h2>Sitio web de comercio electrónico</h2>
+                <p>Tienda en línea completamente funcional con carrito de compras, filtros de productos y diseño adaptable.</p>
+            </li>
+        </ul>
+                  
+    </section>
+</main>
+  <footer>
+  <section>
+    <div class="copyright">
+      <p> © Copyright 2025. Todos los derechos reservados. Diseñado por G. Hernández Eslait</p>
+    </div>
+  </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
